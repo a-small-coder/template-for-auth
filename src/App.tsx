@@ -1,5 +1,5 @@
 import './App.css'
-import { withRouter } from './hocs/wiithRouter'
+import { withRouter } from './hocs/withRouter'
 import MainPage from './pages/Main'
 
 function App() {
