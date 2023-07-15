@@ -1,11 +1,13 @@
 import {Routes, Route} from 'react-router-dom'
 import sitePath from './routesConsts'
-import ErrorPage from '../pages/Error'
-import MainPage from '../pages/Main'
-import LoginPage from '../pages/Login'
-import RegisterPage from '../pages/Register'
-import ProtectedRoute from './ProtectedRoute'
-import WithoutUserRoute from './WithoutUserRoute'
+import { lazy } from 'react'
+
+const MainPage = lazy(() => import('../pages/Main'))
+const  LoginPage = lazy(() => import('../pages/Login'))
+const RegisterPage = lazy(() => import('../pages/Register'))
+const ProtectedRoute = lazy(() => import('./ProtectedRoute'))
+const WithoutUserRoute = lazy(() => import('./WithoutUserRoute'))
+const ErrorPage =lazy(() => import('../pages/Error'))
 
 const Router = () => {
 
