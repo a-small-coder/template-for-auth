@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx"
-import {removeLocalStorage, setLocalStorage} from './utils/setLocalStorage'
+import {removeLocalStorage, setLocalStorage} from './utils/LocalStorage'
 
 export class UserStore {
     isAuthenticated = false
